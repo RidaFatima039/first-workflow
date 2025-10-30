@@ -1,23 +1,13 @@
-name: Deploy HTML Page
+name: RidaFatima039
 
 on:
   push:
-    branches:
-      - main
+   branches: [main]
 
 jobs:
-  deploy:
+  demo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: List files
-        run: ls -R
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+      - name: Greetings
+        run: echo "hello from rida"
